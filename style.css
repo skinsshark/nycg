@@ -16,7 +16,7 @@ body {
 
 @media only screen and (max-width: 767px) {
   body {
-    padding: 15px;
+    padding: 10px;
   }
 }
 
@@ -45,7 +45,7 @@ ul li::before {
 }
 
 ul li ul li::before {
-  content: '';
+  content: '= ';
 }
 
 a {
