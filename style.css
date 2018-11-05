@@ -1,0 +1,53 @@
+@font-face {
+	font-family: 'Main';
+	src: url("./fonts/Main.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: 'Wide';
+	src: url("./fonts/Wide.ttf") format('truetype');
+}
+
+body {
+  font-family: 'Main';
+  padding: 20px 15vw 20px 20px;
+  word-break: break-all;
+}
+
+h1 {
+  font-family: 'Wide';
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+ul.main {
+  column-count: 1;
+  column-gap: 100px;
+}
+
+ul li.place {
+  margin-bottom: 25px;
+}
+
+ul li::before {
+  content: '- ';
+}
+
+ul li ul li::before {
+  content: '';
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:hover {
+  cursor: crosshair;
+  font-style: italic;
+}
